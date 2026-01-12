@@ -152,4 +152,6 @@ $(document).ready(function () {
         $("#filterMov").on("change", function() { cargarMovimientos($(this).val()); });
     }
 
+
 });
+// Módulo de transacciones e historial completado
