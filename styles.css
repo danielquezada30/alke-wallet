@@ -1,0 +1,60 @@
+/* Paleta de colores Alke Wallet */
+:root {
+    --primary-dark: #2c045b;    /* Púrpura oscuro */
+    --accent-orange: #f25629;   /* Naranja vibrante */
+    --accent-soft-orange: #f6965c; 
+    --purple-medium: #8c67ab;   
+    --purple-light: #d1a4d4;    
+    --bg-light: #f8f9fa;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Personalizada */
+.navbar-custom {
+    background-color: var(--primary-dark) !important;
+}
+
+/* Tarjeta de Saldo con degradado */
+.card-balance {
+    background: linear-gradient(135deg, var(--primary-dark), var(--purple-medium));
+    color: white;
+    border: none;
+    border-radius: 16px;
+}
+
+/* Botón estilo Fintech */
+.btn-primary-alke {
+    background-color: var(--accent-orange);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-alke:hover {
+    background-color: var(--accent-soft-orange);
+    color: white;
+    transform: translateY(-2px);
+    shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Corrección del error del punto rojo */
+.form-control:focus {
+    border-color: var(--purple-medium);
+    box-shadow: 0 0 0 0.25rem rgba(140, 103, 171, 0.25);
+}
+
+/* Estados de movimientos */
+.text-success-alke { 
+    color: #28a745 !important; 
+    font-weight: bold; 
+}
+.text-danger-alke { 
+    color: var(--accent-orange) !important; 
+    font-weight: bold; 
+}

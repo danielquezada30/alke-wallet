@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Alke Wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="menu.html">Alke Wallet</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deposit.html">Depositar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sendmoney.html">Enviar Dinero</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transactions.html">Historial</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <button class="btn btn-outline-light btn-sm fw-bold border-0" onclick="logout()">
+                    Cerrar Sesión ✕
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card card-balance shadow-lg mb-4 text-center p-4">
+                    <h5 class="opacity-75 mb-2">Saldo Total Disponible</h5>
+                    <h2 id="saldo" class="display-5 fw-bold">$0.00</h2>
+                </div>
+                <div class="d-grid gap-3">
+                    <a href="deposit.html" class="btn btn-white shadow-sm py-3 text-start border d-flex justify-content-between align-items-center"><span>Ingresar dinero</span><span class="text-primary">→</span></a>
+                    <a href="sendmoney.html" class="btn btn-white shadow-sm py-3 text-start border d-flex justify-content-between align-items-center"><span>Enviar a un contacto</span><span class="text-primary">→</span></a>
+                    <a href="transactions.html" class="btn btn-white shadow-sm py-3 text-start border d-flex justify-content-between align-items-center"><span>Historial de movimientos</span><span class="text-primary">→</span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
